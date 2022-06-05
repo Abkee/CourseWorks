@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+    <title>Proga</title>
+</head>
+<body>
+    <div class="bas"><h2> Әлеуметтік желі статусының генераторы </h2></div>
+    <ul class="otshet">
+     <li>Онлайн қолданушылар саны {{ on }}</li>
+     <li>Офлайн қолданушылар саны {{ of }} </li>
+     <li>Бос емес қолданушылар саны{{ za }}</li>
+    </ul>
+     <form>
+           <button>
+            <img class="knopka" src="obnova.png" alt="" style="vertical-align:middle">
+            Статустарды жаңарту
+           </button>
+       </p>
+     </form>
+    {% set count = namespace(value=0) %}
+    {% for x in mas %}
+        {% if x == 0 %}
+            <div class="offline"><p>Офлайн ({{ tme[count.value] }} минут бұрын онлайн болған)</p>
+                {% set count.value = count.value + 1 %}
+            </div>
+
+        {% elif x == -1 %}
+            <div class="zanyt"><p>Бос емес</p></div>
+        {% elif x == 1 %}
+            <div class="online"><p>Онлайн</p></div>
+        {%endif%}
+    {% endfor %}
+</body>
+</html>

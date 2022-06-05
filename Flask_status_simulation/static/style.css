@@ -1,0 +1,55 @@
+body {
+    background: gray;
+    margin: 0;
+    padding: 0;
+}
+.bas{
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 30px;
+}
+.offline{
+    text-align: center;
+    float: left;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    background: red;
+    align-content: center;
+    vertical-align: middle;
+}
+.after-box {
+    clear: left;
+}
+.online{
+    text-align: center;
+    float: left;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    background: chartreuse;
+    align-content: center;
+    vertical-align: middle;
+}
+.after-box {
+    clear: left;
+}
+.zanyt{
+    text-align: center;
+    float: left;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    background: darkmagenta;
+    align-content: center;
+    vertical-align: middle;
+}
+.after-box {
+    clear: left;
+}
+.knopka{
+    background: chartreuse;
+}
+.otshet{
+    font-size: 20px;
+}
