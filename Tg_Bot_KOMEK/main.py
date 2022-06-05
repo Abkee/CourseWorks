@@ -3,7 +3,7 @@ from telebot import types
 import  random
 
 # токен для бота, типа API
-bot = telebot.TeleBot('5200796490:AAHu90eSS_-sb5GDVQdqldiCHtgK6dh3nQ0')
+bot = telebot.TeleBot('individual_token')
 
 # Психологи
 psyhologs = ["Евгений Геннадьевич +7 777 745 4859", "Рустем Нурланов +7 705 4546", "Омар Таймасулы +7 708 969 1312",
